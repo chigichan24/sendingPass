@@ -30,7 +30,7 @@ public class SendingPass implements Runnable{
         }catch (IOException e){
             System.err.println(e.getMessage());
         }
-        if(str == "Success!"){
+        if(str.equals("Success!")){
             this.callback.setOK();
         }
         else{
